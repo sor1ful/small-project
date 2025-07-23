@@ -12,8 +12,18 @@ document.getElementById('btn-login')
     console.log('Login button is clicked');
     // Step-3 Get the phone Number;
     const phoneNumber = document.getElementById('phn-number').value;
-    console.log(phoneNumber);
     const getPin = document.getElementById('pin-set').value;
-    console.log(getPin);
+    console.log(phoneNumber , getPin);
+    if(phoneNumber.length===11 &&phoneNumber==='01797194819' && getPin ==='7533'){
+
+        // console.log('you are logged in')
+        alert('You Are Logged In')
+        window.location.href = '/home.html';
+        document.getElementById('home-page');
+    }
+    else{
+        alert('Wrong phone number or pin ');
+    }
+
 
 })
